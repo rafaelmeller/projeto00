@@ -20,7 +20,8 @@ calc.title("Calculadora do Rafa")
 op=""
 
 iptext=StringVar()
-iparea=Entry(calc,font=('large,_font',15,'bold'),bd=10,justify="right",insertwidth=4,textvariable=iptext).grid(columnspan=10)
+iparea=Entry(calc,font=('large,_font',15,'bold'),bd=10,justify="right",insertwidth=4,textvariable=iptext)
+iparea.grid(columnspan=10)
 
 bt7=Button(calc,font=('arial',15,'bold'),command=lambda:click(7),bg="lavender",text="7",bd=5,padx=15,pady=10).grid(row=1,column=0)
 
@@ -53,5 +54,6 @@ btC=Button(calc,font=('arial',15,'bold'),command=clearDisplay,bg="lavender",text
 eql=Button(calc,font=('arial',15,'bold'),command=evaluate,bg="lavender",text="=",bd=5,padx=15,pady=10).grid(row=4,column=2)
 
 div=Button(calc,font=('arial',15,'bold'),command=lambda:click('/'),bg="lavender",text="/",bd=5,padx=15,pady=10).grid(row=4,column=3)
+
 
 calc.mainloop(),
